@@ -1,6 +1,6 @@
 # Sintaxis y Semantica de los Lenguajes
-## Curso: k2051
-## Año 2019. Anual.
-### Legajo: 163.343-.
+## Autor:
+### Legajo: 163.343-0.
+### Nombre: Damian 
 ### Apellido: Fernandez Urroz
-### Nombre: Damian
+## TP 0: Hello World
