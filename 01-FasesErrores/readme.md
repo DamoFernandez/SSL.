@@ -23,7 +23,7 @@ Como en lenguaje de bajo nivel no existe una operacion para printf, se genero un
 
 9) Para ensamblar el archivo hello4.s en hello4.o sin vincular, utilice el comando " as -o hello4.o hello4.s
 
-10) No puede enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: ld -o hello4 hello4 .o -lstdio.h
+10) No puede enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: "gcc ld -o hello4 hello4.o -lstdio.h"
 
 11) El arreglo realizado para el archivo hello5.c fue:
 Incluir directamente la libreria estandar en el codigo "#include <stdio.h>"
