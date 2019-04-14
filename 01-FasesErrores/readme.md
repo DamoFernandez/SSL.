@@ -5,10 +5,13 @@ Para generar el archivo Hello2.i utilice el comando "cgg hello2.c -E > hello2.i"
 
 5)Para preprocesar el archivo hello3.c utilice el siguiente comando en la consola "cgg -E hello3.c". Para generar el archivo Hello2.i utilice el comando "cgg hello3.c -E > hello3.i"
 En el archivo hello3.i se agregaron siguientes lineas al principio del archivo:
-" # 1 "hello3.c"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 1 "hello3.c" "
+#### # 1 "hello3.c"
+
+#### # 1 "<built-in>"
+ 
+#### # 1 "<command-line>"
+
+#### # 1 "hello3.c" "
 
 6) Para compilar el archivo hello4.c utilice el siguiente comando en la consola "cgg -S hello3.c" y se genero el archivo hello3.s sin ensamblarse. Genera un error sintaxis, ya que la funcion "prontf" no esta declarada e insunia utilizar "printf"
 
