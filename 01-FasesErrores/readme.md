@@ -34,7 +34,7 @@
 ### Para ensamblar el archivo hello4.s en hello4.o sin vincular, utilice el comando " as -o hello4.o hello4.s
 
 ## 10.
-### No puede enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: "gcc ld -o hello4 hello4.o -lstdio.h"
+###Para enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: "gcc hello4.o -LC:\Users\damia\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\mingw\x86_64-w64-mingw32\includestdio.h"
 
 ## 11.
 ### El arreglo realizado para el archivo hello5.c fue:
