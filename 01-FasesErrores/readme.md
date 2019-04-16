@@ -2,7 +2,7 @@
 ### Para preprocesar el archivo hello2.c utilice el siguiente comando en la consola "cgg -E hello2.c", este comando me mostro el resultado por pantalla, en el cual se podia contemplar que el comentario "/*medio*/" se habia remplazado por un espacio, generando una correcta sintaxis.
 ### Para generar el archivo Hello2.i utilice el comando "cgg hello2.c -E > hello2.i"
 
-## 4.
+## 4. es la declaracion de una funcion quetiene como salida un stdout de una cadena de caracteres
 
 ## 5. 
 ### Para preprocesar el archivo hello3.c utilice el siguiente comando en la consola "cgg -E hello3.c". Para generar el archivo Hello2.i utilice el comando "cgg hello3.c -E > hello3.i"
@@ -17,11 +17,10 @@
 
 ## 6.
 
-### Para compilar el archivo hello4.c utilice el siguiente comando en la consola "cgg -S hello3.c" y se genero el archivo hello3.s sin ensamblarse. Genera un error sintaxis, ya que la funcion "prontf" no esta declarada e insunia utilizar "printf"
+### Para compilar el archivo hello3.c utilice el siguiente comando en la consola "cgg -S hello3.c" y se genero el archivo hello3.s sin ensamblarse. Genera un error sintaxis, ya que falta una } para cerrar el mail.
 
 ## 7.
 ### Las correcciones hechas en hello3.c para generar hello4.c fueron:
-#### Remplazar prontf por printf
 #### Agregar la } faltante para cerrar el main
 ### Utilice los comandos "cgg -E hello4.c" para generar el preprocesado y el comando "cgg -S hello4.c" para ensamblar
 
@@ -34,17 +33,17 @@
 ### Para ensamblar el archivo hello4.s en hello4.o sin vincular, utilice el comando " as -o hello4.o hello4.s
 
 ## 10.
-###Para enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: "gcc hello4.o -LC:\Users\damia\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\mingw\x86_64-w64-mingw32\includestdio.h"
+### Para enlazar el archivo hello4.o con la biblioteca estandar, el comando utilizado fue: "gcc hello4.o -LStandard
 
 ## 11.
 ### El arreglo realizado para el archivo hello5.c fue:
-#### Incluir directamente la libreria estandar en el codigo "#include <stdio.h>"
+### se remplazo prontf por printf
 #### Se agrego la funcion "getchar();" para que el programa espere a recibir una tecla para continuar y asi ver por pantalla el resultado, ya que al terminar la sentencia, el programa se cerraba
 
 ## 12.
 ### Hello5 no muestra el resultado correcto por pantalla, ya que nunca se le pasa la variable i, la cual contiene almacenada el numero 42.
 
-#### El resultado es "La respuesta es 8683848483", este ultimo numero cambiaba cada vez que se ejecutaba el programa, asumo que es una direccion de memoria
+#### El resultado es "La respuesta es 8683848483", este ultimo numero cambiaba cada vez que se ejecutaba el programa, el cual es informacion desconocida
 
 ## 13.
 ### EL arreglo realizado para el achivo hello6.c fue:
@@ -53,11 +52,4 @@
 #### El resultado final fue "La respuesta es 42"
 
 ## 14.
-### Con mi compilador no funciona el programa hello7.c muestra el siguiente error, el cual marca que falta claramente una declaracion para printf:
-
-#### "hello7.c: In function 'main':
-#### hello7.c:3:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-####   printf("La respuesta es %d\n", i);
-####   ^~~~~~
-#### hello7.c:3:2: warning: incompatible implicit declaration of built-in function 'printf'
-#### hello7.c:3:2: note: include '<stdio.h>' or provide a declaration of 'printf'"
+### Funciona ya que C permite generar declaraciones implicitas.
